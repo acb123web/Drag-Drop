@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--************* ************ *****************-->
+    <!--Subscribe to My Youtube channel "Coder ACB" -->
+    <!--************* ************ *****************-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag-Drop</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="drop">
+        <div class="drop__container">
+            <div id="drop-items">
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img src="./img/html.png" class="drop__img">
+                        <div>
+                            <h1 class="drop__name">HTML</h1>
+                            <span class="drop__profession" id="text" style="display:none;">Completed</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">
+                            <input class="label__checkbox" type="checkbox" id="myCheck" />
+                            <span class="label__text">
+                                <span class="label__check">
+                                    <i class="fa fa-check icon"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img src="./img/css.png" class="drop__img">
+                        <div>
+                            <h1 class="drop__name">CSS</h1>
+                            <span class="drop__profession" id="text1" style="display:none;">Completed</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">
+                            <input class="label__checkbox" type="checkbox" id="myCheck1" />
+                            <span class="label__text">
+                                <span class="label__check">
+                                    <i class="fa fa-check icon"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="drop__card">
+                    <div class="drop__data">
+                        <img src="./img/js-format.png" class="drop__img">
+                        <div>
+                            <h1 class="drop__name">JavaScript</h1>
+                            <span class="drop__profession" id="text2" style="display:none;">Completed</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="label">
+                            <input class="label__checkbox" type="checkbox" id="myCheck2" />
+                            <span class="label__text">
+                                <span class="label__check">
+                                    <i class="fa fa-check icon"></i>
+                                </span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="./vendors/js/sortable.min.js"></script>
+        <script src="./vendors/js/Jquery-3.3.1.slim.min.js"></script>
+        <script src="./js/main.js"></script>
+</body>
+</html>

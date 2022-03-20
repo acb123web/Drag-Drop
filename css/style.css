@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap');
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f8fcf8;
+}
+h1{
+    margin:0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height:auto;
+}
+h4{
+    text-align: center;
+}
+.drop, .drop__container{
+    display:grid;
+}
+.drop{
+    height:100vh;
+    align-items: center;
+    justify-content: center;
+}
+.drop__container{
+    row-gap:1rem;
+    padding:2rem;
+    box-shadow:4px 4px 16px #E1E1E1;
+}
+.drop__card, .drop__data{
+    display:flex;
+    align-items: center;
+}
+.drop__card{
+    width:360px;
+    justify-content: space-between;
+    padding: .75rem 1.25rem .75rem .75rem;
+    background-color: #F8F8FC;
+    margin:10px 0px;
+    box-shadow:4px 4px 16px #E1E1E1, -2px -2px 16px #FFF;
+    border-radius:.5rem;
+}
+.drop__img{
+    width:70px;
+    border-radius: 5%;
+    margin-right: 1rem;
+}
+.drop__name{
+    font-size:1rem;
+    color:#272A3A;
+    font-weight:500;
+}
+.drop__profession{
+    font-size:.813rem;
+    color:#8A8EAA;
+}
+.sortable-chosen{
+    box-shadow:8px 8px 32px #E1E1E1;
+}
+.sortable-drag{
+    opacity:0;
+}
+.label__checkbox{
+    display:none;
+}
+.label__check{
+    display:inline-block;
+    border-radius: 50%;
+    border:5px solid rgba(0,0,0,0.1);
+    background: #fff;
+    vertical-align: middle;
+    margin-right: 20px;
+    width:2rem;
+    height:2rem;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:border .3s ease;
+}
+.label__checkbox:checked + .label__text .label__check{
+    animation:check .5s cubic-bezier(0.895,0.030,0.685,0.220) forwards;
+}
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+@keyframes icon{
+    from{
+        opacity:0;
+        transform:scale(0.3);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+@keyframes check{
+    0%{
+        width:1.5rem;
+        height:1.5rem;
+        border-width:5px;
+    }
+    10%{
+        width:1.5rem;
+        height:1.5rem;
+        opacity:0.1;
+        background: rgba(0,0,0,0.2);
+        border-width:15px;
+    }
+    12%{
+        width:1.5rem;
+        height:1.5rem;
+        opacity:0.4;
+        background: rgba(0,0,0,0.1);
+        border-width:0;
+    }
+    50%{
+        width:2rem;
+        height:2rem;
+        background: #07bfff;
+        border:0;
+        opacity:0.6;
+    }
+    100%{
+        width:2rem;
+        height:2rem;
+        background: #07bfff;
+        border:0;
+        opacity:1;
+        color:#fff;
+    }
+}
